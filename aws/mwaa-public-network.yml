@@ -264,20 +264,7 @@ Resources:
         WebserverLogs:
           LogLevel: !Ref WebserverLogsLevel
           Enabled: true
-  SecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      VpcId: !Ref VPC
-      GroupDescription: !Sub "Security Group for Amazon MWAA Environment ${AWS::StackName}-MwaaEnvironment"
-      GroupName: !Sub "airflow-security-group-${AWS::StackName}-MwaaEnvironment"
   
-  SecurityGroupIngress:
-    Type: AWS::EC2::SecurityGroupIngress
-    Properties:
-      GroupId: !Ref SecurityGroup
-      IpProtocol: "-1"
-      SourceSecurityGroupId: !Ref SecurityGroup
-
   SecurityGroupEgress:
     Type: AWS::EC2::SecurityGroupEgress
     Properties:
