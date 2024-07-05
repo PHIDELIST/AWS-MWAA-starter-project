@@ -22,7 +22,7 @@ jobs:
     - name: Deploy cloudformation 
       run: |
         cd aws
-        aws cloudformation create-stack --stack-name mwaa-environment-public-network --template-body mwaa-public-network.yml --capabilities CAPABILITY_IAM
+        aws cloudformation create-stack --stack-name mwaa-environment-public-network --template-body file://mwaa-public-network.yml --capabilities CAPABILITY_IAM
 
 
 
