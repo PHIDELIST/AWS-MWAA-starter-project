@@ -5,7 +5,7 @@ It includes a CloudFormation template to automatically provision necessary AWS r
 The GitHub Actions automate the process of deploying Directed Acyclic Graphs (DAGs) to Amazon S3 and deploying the AWS CloudFormation stack. 
 The app also offers functionality to test MWAA workflows locally, ensuring a smooth transition before deploying to a production environment.
 
-## Architecture
+
 
 ## Testing dags locally 
 + Add DAG code to the ```dags/``` folder.
