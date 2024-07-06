@@ -220,8 +220,7 @@ Resources:
   EnvironmentBucket:
     Type: AWS::S3::Bucket
     Properties:
-      VersioningConfiguration:
-        Status: Enabled
+      BucketName: mwaabcktprod254
       PublicAccessBlockConfiguration: 
         BlockPublicAcls: true
         BlockPublicPolicy: true
