@@ -23,4 +23,4 @@ jobs:
     - name: Upload DAGs to S3
       run: |
         cd dags
-        aws s3 sync *.py s3://${{ secrets.S3_BUCKET_NAME }}/dags/
+        aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}/dags/ --exclude "*" --include "*.py"
